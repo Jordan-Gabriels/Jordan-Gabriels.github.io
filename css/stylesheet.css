@@ -1,0 +1,195 @@
+
+/* Overall styles */
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+h1 {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 35px;
+}
+
+h2 {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 30px;
+}
+
+p {
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 14px;
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 25px;
+    }
+    h1 {
+        Font-Size: 30px;
+    }
+}
+
+
+/* Navigation Section */
+
+
+.topnav {
+    background-color: #181E34;
+    width: 100%;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    z-index:1;
+    border-bottom: 2px solid #EAEBEB;
+}
+
+.navItem {
+    padding: 12px 24px;
+    float: left;
+    display: block;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    text-decoration: none;
+    Font-Size: 15px;
+    color: #EAEBEB;
+}
+
+.navItem:hover {
+    color: #181E34;
+    background-color: #EAEBEB;
+}
+
+/* Page Content */
+  
+/*
+.pageContent {
+    margin-top: 50px; 
+} */
+
+/* Add a top margin to avoid content overlay */
+
+/* Banner section */
+
+.bannerSection {
+    background-image: url('../images/studyImage.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 25em;
+    position: relative;
+    padding: 20px;
+}
+
+.bannerContent {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #EAEBEB;
+    background-color: rgba(24, 30, 52, .7);
+    padding: 0 3em;
+    text-align: center;
+    max-width: 400px;
+}
+
+
+/* Bio section */
+
+.bioSection {
+    width: auto;
+    text-align: center;
+    background-color: #181E34;
+    color :#EAEBEB;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.bioSectionContainer {
+    max-width: 600px;
+}
+
+/* Projects section */
+
+.projectsSection {
+    width: auto;
+    padding: 20px;
+    background-color:#79C698;
+    color: #181E34;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projectsSectionContainer {
+    max-width: 800px;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+.projectsContainer > * {
+    width: 300px;
+    
+    padding: 30px;
+    background-color:#181E34;
+    color: #EFF8F3;
+    border: 2px solid #EFF8F3;
+    margin: 1em 0;
+}
+
+.projectsContainer img {
+    width: 200px;
+}
+
+a.readMoreButton {
+    display:inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #EAEBEB;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 15px;
+    font-weight: 300;
+    color:#EAEBEB;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #181E34;  
+    margin: 20px;
+}
+
+a.readMoreButton:hover {
+    color:#181E34;
+    background-color:#EAEBEB;
+    }
+
+/* The Contact Section */
+
+.contactSection {
+    width: auto;
+    height: 300px;
+    background-color: #181E34;
+    color: #EAEBEB;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.contactSectionCard {
+    background-color: #79C698;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #EAEBEB;
+    color: #181E34;
+    max-width: 600px;
+}

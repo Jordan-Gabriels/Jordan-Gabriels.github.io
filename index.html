@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JBG - Tech</title>
-        <link rel="icon" href="https://pbs.twimg.com/profile_images/1274196133984612352/TnduZEiS_400x400.jpg">
-        <link href="css/index.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <!--Banner section-->
-        <div class="banner">
-          <h1>Jordan's Github Test Site</h1>
-          <br>
-          <img id="profile-pic" src="./images/profile_pic.jpeg" alt="">
-        </div>
-        <!--Banner section-->
-        <br>
-        <p>This is my personal website. It is an evolving project where I hope to display 
-            product work that I am proud of. The reason I am making it a website is so that I 
-            practice my HTML, CSS and Java Script skills.
-        </p>
-        <a href="Jordan Gabriels - 2021 Resume .pdf" download target="_blank">Resume</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBG</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
-        <a href="art_site_project/art_site.html"><h3 href=>Codecademy art site project</h3></a>
-    </body>
+
+</head>
+<body>
+    <!--Navigation Section (START)-->
+        <div class="topnav">
+            <a href="#bannerSection" class="navItem">HOME</a>
+            <a href="#projectsSection" class="navItem">PROJECTS</a>
+            <a href="#contactSection" class="navItem">CONTACT</a>
+        </div>
+    <!--Navigation Section (END)-->
+
+    
+
+    <!-- Page Content (START)-->
+
+        <!--Banner section (START)-->
+            <div id="bannerSection" class="bannerSection">
+                <div class="bannerContent">
+                    <H2>Jordan Gabriels</H2>
+                    <p>Hello there 👋 Welcome to my personal website</p>
+                </div>
+            </div>
+        <!--Banner section (END)-->
+
+        
+        <!--Bio section (START)-->
+            <div class="bioSection">
+                <div class="bioSectionContainer">
+                    <H1>About Me</H1>
+                    <p>My life goal is to have a non-fungible impact on accelerating long run economic growth rates. To that end, I have built this page to display the projects I am working on.</p>
+                    <a href="https://docs.google.com/document/d/1YqL5xQIWr56czzKaw0Zt-GzVZxi4Mr2T3YGkWGiIkQ4/edit" class="readMoreButton" target="_blank">VIEW RESUME</a>
+                </div>
+            </div>
+        <!--Bio section (END)-->
+
+        <!--Projects section (START)-->
+            <div id="projectsSection" class="projectsSection">
+                <div class="projectsSectionContainer">
+                    <H1>Projects</H1>
+                    <p>A few sentence description of describing what this section is about. 
+                        Essentially just some stuff about projects I have worked over the years</p>
+                    
+                    <div class="projectsContainer">
+                        <div class="projectCard1">
+                            <H2>The Procrastination Game</H2>
+                            <p>To play the procrastination game, you first need to think of one thing you are procrastinating doing this week. Then simply complete the yellow cells and see how your probability of success changes.</p>
+                            <img src="./images/ProcrastinationGame.png" alt="Project image card">
+                            <a href="https://docs.google.com/spreadsheets/d/1Bnl9KWC0sE3l_0uANH8jU9-0FE9mQwMvp2vItMZ1-xs/edit#gid=0" class="readMoreButton" target="_blank">VIEW PROJECT</a>
+                        </div>
+                        <div class="projectCard2">
+                            <H2>Kettlebell Barbell Adaptor</H2>
+                            <p>An adapter that can be added to a kettlebell that allows it to fit on a standard barbell.</p>
+                            <img src="./images/kettlebellDesign.png" alt="Project image card">
+                            <a href="https://docs.google.com/document/d/1w2M4_eNoLdDtnjUZtdphRYqL6QLIhmmjrAvO7TutyiY/edit#heading=h.ckh4c9f5gdez" class="readMoreButton" target="_blank">VIEW PROJECT</a>
+                        </div>
+                        <div class="projectCard3">
+                            <H2>Project Title 3</H2>
+                            <p>Project description...</p>
+                            <img src="https://worldwellnessgroup.org.au/wp-content/uploads/2020/07/placeholder.png" alt="Project image card">
+                            <a href="#" class="readMoreButton" target="_blank">VIEW PROJECT</a>
+                        </div>
+                        <div class="projectCard4">
+                            <H2>Project Title 4</H2>
+                            <p>Project description...</p>
+                            <img src="https://worldwellnessgroup.org.au/wp-content/uploads/2020/07/placeholder.png" alt="Project image card">
+                            <a href="#" class="readMoreButton" target="_blank">VIEW PROJECT</a>
+                        </div>
+                    </div>
+                </div>
+                    
+                    
+            </div>
+        <!--Projects section (END)-->
+
+        <!-- The Contact Section (START)-->
+            <div id="contactSection" class="contactSection">
+                <H1>Contact</H1>
+                <div class="contactSectionCard">
+                    <span class="material-icons">place</span>
+                    <p>New York City</p>
+                    <span class="material-icons">email</span>
+                    <p>jordangabriels@gmail.com</p>
+                </div>
+                
+            </div>
+        <!-- The Contact Section (END)-->
+
+    
+    <!-- Page Content (END)-->
+
+</body>
 </html>

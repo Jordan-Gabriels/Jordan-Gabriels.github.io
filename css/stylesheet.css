@@ -4,6 +4,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 12px;
     margin: 0;
+    background-color: #181E34;
 }
 
 h1 {
@@ -14,6 +15,11 @@ h1 {
 h2 {
     Font-Family: 'Roboto Condensed', Sans-Serif;
     Font-Size: 30px;
+}
+
+h3 {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 24px;
 }
 
 p {
@@ -194,3 +200,79 @@ a.readMoreButton:hover {
     color: #181E34;
     max-width: 600px;
 }
+
+/* From Elements */
+
+form {
+    line-height: 27px;
+    
+  }
+
+label {
+    font-size: 16px;
+}
+
+label.title {
+    font-size: 20px;
+}
+
+  input[type="text"], input[type="number"] {
+    min-height: 15px;
+    border-radius: 5px;
+    border:1px solid blue;
+  }
+
+  input[type="radio"] {
+    margin-left: 12px;
+  }
+
+  span.question {
+    font-size: 20px;
+  }
+
+  input[type=submit] {
+    display:inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #EAEBEB;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 15px;
+    font-weight: 300;
+    color:#EAEBEB;
+    text-align:center;
+    transition: all 0.2s;
+    background-color: #181E34;  
+    margin: 20px;
+}
+
+input[type=submit]:hover {
+    color:#181E34;
+    border: 0.1em solid #181E34;
+    background-color:#79C698;
+    }
+
+#calculatedProbability {
+    font-size: 150px;
+    line-height: 25%;
+}
+
+#resultsAnalysis {
+    background-color: #181E34;
+    width: 90%;
+    margin: auto;
+    
+    border: 2px solid #181E34;
+    color: #EAEBEB;
+    max-width: 600px;
+}
+
+#resultsAnalysis p {
+    font-size: 16px;
+} 
+
+#resultsAnalysis h2 {
+    font-size: 24px;
+} 

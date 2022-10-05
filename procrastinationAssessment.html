@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procrastination Assessment</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="icon" href="./images/browserIcon.png">
+
+
+</head>
+<body>
+    <!--Navigation Section (START)-->
+    <div class="topnav">
+        <a href="index.html#bannerSection" class="navItem">HOME</a>
+        <a href="index.html#projectsSection" class="navItem">PROJECTS</a>
+        <a href="index.html#contactSection" class="navItem">CONTACT</a>
+    </div>
+    <!--Navigation Section (END)-->
+
+    
+
+    <!-- Page Content (START)-->
+        
+        <!--Bio section (START)-->
+            <div class="bioSection">
+                <div class="bioSectionContainer">
+                    <br><br>
+                    <H1>Welcome to the Procrastination Game!</H1>
+                    <h3>Answer the questions below to get immediate feedback on your probability of success.</h3>
+                </div>
+            </div>
+        <!--Bio section (END)-->
+
+        <!--Form section (START)-->
+            <div id="projectsSection" class="projectsSection">
+                <div class="projectsSectionContainer">
+                    <form action="procrastinationResults.html" method="GET">
+                            <label class=title for="task">What important task are you procrastinating this week?:</label>
+                                <br>
+                            <textarea type="text" id="task" name="task" required rows="3" cols="35"></textarea>
+                                <br>
+                                <br>
+                    
+                                <span class="question">How long do think the task will take you?:</span>
+                                <br>
+                                    <input type="radio" id="under10" name="length" required value="1">
+                                    <label for="under10">Under 10 minutes</label>
+                                    <br>
+                                    <input type="radio" id="10to20" name="length" required value="0.93">
+                                    <label for="10to20">10 - 20 minutes</label>
+                                    <br>
+                                    <input type="radio" id="20to60" name="length" required value="0.87">
+                                    <label for="20to60">20 - 60 minutes</label>
+                                    <br>
+                                    <input type="radio" id="over60" name="length" required value="0.8">
+                                    <label for="over60">Over 60 minutes</label>
+                                </span>
+                    
+                            <br>
+                            <br>
+                            <span class="question">Do you know the exact time you intend to do this? :</span>
+                            <br>
+                                <input type="radio" id="yes" name="time" required value="1">
+                                <label for="yes">Yes</label>
+                                
+                                <input type="radio" id="kinda" name="time" required value="0.9">
+                                <label for="kinda">Kinda</label>
+                                
+                                <input type="radio" id="no" name="time" required value="0.8">
+                                <label for="no">No</label>
+                                <br>
+                                <br>
+                            <span class="question">Do you know where you will be when you do this?:</span>
+                            <br>
+                                <input type="radio" id="yes2" name="location" required value="1">
+                                <label for="yes2">Yes</label>
+                                <input type="radio" id="kinda2" name="location" required value="0.9">
+                                <label for="kinda2">Kinda</label>
+                                <input type="radio" id="no2" name="location" required value="0.8">
+                                <label for="no2">No</label>
+                                <br>
+                                <br>
+                            <span class="question">When you think about doing the task, how uncomfortable or anxious do you feel?:</span>
+                            <br>
+                                <input type="radio" id="notAtAll" name="anxiety" required value="1">
+                                <label for="notAtAll">Not at all</label>
+                                <input type="radio" id="aLttle" name="anxiety" required value="0.95">
+                                <label for="aLttle">A little</label>
+                                <input type="radio" id="moderately" name="anxiety" required value="0.9">
+                                <label for="moderately">Moderately</label>
+                                <input type="radio" id="very" name="anxiety" required value="0.85">
+                                <label for="very">Very</label>
+                                <input type="radio" id="extremely" name="anxiety" required value="0.8">
+                                <label for="extremely">Extremely</label>
+
+                                <br><br><br>
+
+
+                            <label class=title for="failure">Describe how you will most likely fail to complete your important task this week?:</label>
+                                <br>
+                            <textarea id="failure" name="failure" required rows="3" cols="35"></textarea>
+                                <br>
+                                <br>
+                                <span class="question">How likely is that you will fail to complete your important task, as you described above?:</span>
+                                <br>
+                                <input type="radio" id="veryUnlikely" name="failureProb" required value="0.1">
+                                <label for="veryUnlikely">Very unlikely (less than 10%)</label>
+                                <br>
+                                <input type="radio" id="unlikely" name="failureProb" required value="0.3">
+                                <label for="unlikely">Unlikely</label>
+                                <br>
+                                <input type="radio" id="evenChance" name="failureProb" required value="0.5">
+                                <label for="evenChance">Even chance 50/50</label>
+                                <br>
+                                <input type="radio" id="veryLikely" name="failureProb" required value="0.7">
+                                <label for="veryLikely">Very likely</label>
+                                <br>
+                                <input type="radio" id="certain" name="failureProb" required value="0.9">
+                                <label for="certain">Almost certain (more than 90%)</label>
+                                <br>
+                            
+                            <section class="submission">
+                                <input class="submitButton" type="submit" value="Calculate">
+                            </section>
+                            <br>
+                    </form>
+                </div>
+            </div>
+                    
+            <!--Form section (END)-->
+
+        <!-- The Contact Section (START)-->
+            <div id="contactSection" class="contactSection">
+                <H1>Contact</H1>
+                <div class="contactSectionCard">
+                    <span class="material-icons">place</span>
+                    <p>New York City</p>
+                    <span class="material-icons">email</span>
+                    <p>jordangabriels@gmail.com</p>
+                </div>
+                
+            </div>
+        <!-- The Contact Section (END)-->
+
+    
+    <!-- Page Content (END)-->
+
+    <script src ='./js/personalSite.js'></script>
+
+</body>
+</html>
